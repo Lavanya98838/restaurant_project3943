@@ -1,0 +1,113 @@
+
+
+header {
+    background-color:  #0ec5bc;
+    color: #fff;
+    padding: 80px 0;
+  }
+  header h1 {
+    float: left;
+  }
+  nav ul {
+    float: right;
+    list-style: none;
+    display: flex;
+  }
+  nav ul li {
+    display: inline;
+    margin-left: 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: aquamarine; 
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu {
+    padding: 40px 0;
+    background-color: rgb(252, 255, 90);
+    color: #000000;
+  }
+  .menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: x-large;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: space-evenly;
+    column-gap: 50px;
+    row-gap: 50px;
+
+  }
+  .marq { 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+
+} 
+
+.geek1 { 
+    font-size: 64px; 
+    font-family: "Arial", sans-serif;
+    font-weight: bold; 
+    color: white; 
+    padding-bottom: 10px; 
+} 
+  
+  .item {
+    width: 300px;
+    margin: 0 20px 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .item h3 {
+    margin-top: 10px;
+  }
+  
+  .item p {
+    margin-top: 10px;
+  }
+  
+  .item span {
+    display: list-item;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .item:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.75em);
+    transition-duration: 0.2s;
+  }
+ 
+  .add-to-cart {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #b32121;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #cf0000;
+    border-radius: 10px ;
+    scroll-margin-inline-end: 10px;
+  }
+  
