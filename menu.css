@@ -65,7 +65,7 @@ header {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.795);
   }
   
   
@@ -90,8 +90,10 @@ header {
   }
   .item:hover{
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.75em);
+    transform: translateY(-0.85em);
     transition-duration: 0.2s;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+
   }
  
   .add-to-cart {
@@ -110,4 +112,56 @@ header {
     border-radius: 10px ;
     scroll-margin-inline-end: 10px;
   }
-  
+  footer {
+    background-color: #67defc;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  #toastbox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+
+  }
+  .toast {
+    width: 400px;
+    height: 80px;
+    background: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
+   }
+   @keyframes moveleft{
+    100%{
+      transform: translateX(0);
+    }
+   }
+  .toast::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+   
+  }
+   @keyframes anim {
+    100%{
+      width: 0;
+    }
+   }
