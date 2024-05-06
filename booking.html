@@ -7,6 +7,12 @@
   <link rel="shortcut icon" href="819458e3-cd22-4574-bdda-36430a89c2b7.jpg" type="image/x-icon">
   <link rel="stylesheet" href="booking.css">
   
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <script src="booking.js"></script>
+  
 </head>
 <body background="background.jpeg">
   <header>
@@ -26,9 +32,9 @@
   </header>
 
   <section class="booking">
-    <div class="container">
+    <div class="container"> 
       <h2>Make a Booking</h2>
-      <form action="booking.php" method="post">
+      <form action="" id="bookingform">
      <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
@@ -49,6 +55,7 @@
       </form>
     </div>
   </section>
+
 
   <footer>
     <div class="container">
